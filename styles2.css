@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+  }
+ 
+html {
+	font-family: Arial;
+	font-size: 16px;
+	background: #b1690b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A74B1F, #a1782a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to 62deg, #A74B1F, #a1782a, #f7bc68 50%, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    scroll-behavior: smooth;
+       
+}
+#section1 {
+    height: 100%;
+    
+    padding-top: 50px;
+    /* background-color: rgba(0, 0, 0, 0.308); */
+    }
+
+    #section2 {
+    height: 100%;
+    padding-top: 50px;
+    /* background-color: rgba(0, 0, 0, 0.308); */
+    }
+    #section3 {
+        height: 100%;
+        padding-top: 50px;
+        /* background-color: rgba(0, 0, 0, 0.308); */
+    }
+
+ .sidebar {
+	 position: fixed;
+	 width: 10%;
+	 height: 100vh;
+	 background: #0000005e;
+	 font-size: 0.65em;
+}
+ .nav {
+	 position: relative;
+	 margin: 0 15%;
+	 text-align: left;
+	 top: 50%;
+	 transform: translateY(-50%);
+	 font-weight: bold;
+}
+ .nav ul {
+	 list-style: none;
+}
+ .nav ul li {
+	 position: relative;
+	 margin: 3.2em 0;
+}
+ .nav ul li a {
+	 line-height: 5em;
+	 text-transform: uppercase;
+	 text-decoration: none;
+	 letter-spacing: 0.4em;
+	 color: rgba(255, 255, 255, 0.35);
+	 display: block;
+	 transition: all ease-out 300ms;
+}
+ .nav ul li.active a {
+	 color: white;
+     
+     
+  
+     
+}
+ .nav ul li:not(.active)::after {
+	 opacity: 0.2;
+}
+ .nav ul li:not(.active):hover a {
+	 color: rgba(255, 255, 255, 0.75);
+     transition: 0.25s;
+     border-color: red;
+     
+}
+ .nav ul li::after {
+	 content: '';
+	 position: absolute;
+	 width: 100%;
+	 height: 0.2em;
+	 background: black;
+	 left: 0;
+	 bottom: 0;
+	 background-image: linear-gradient(to right, #d9ff00, white);
+     
+}
+ .mainpage {
+	 position: relative;
+	 width: 85%;
+	 float: right;
+	 height: 100vh;
+}
+
+.raise:hover, .raise:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+    background-color: rgb(65, 50, 2);
+    color: white;
+    align-content: center;
+    text-align:center;
+    display: grid;
+  }
+  .header{
+    align-content: center;
+    text-align:left;
+    padding: 0.5rem;
+    color: white;
+    line-height: 2;
+  }
+  .header>h1{
+      font-family: 'Merriweather', serif;
+      font-size: 4rem;
+      line-height: 1;
+      padding-bottom: 2rem;
+      text-transform: uppercase;
+      
+  }
+  .header>h2{
+    font-family: 'Merriweather', serif;
+      font-size: 2rem;
+      line-height: 1.3;
+      color: gainsboro;
+      padding:1rem 2.5rem;
+      text-align: right;
+      text-transform: uppercase;
+     
+  }
+  .header>h4{
+      font-size: 1rem;
+      padding-top: 4rem;
+      color: white;
+  }
+.list-style{
+    padding: 5rem 0 0 1rem;
+}
